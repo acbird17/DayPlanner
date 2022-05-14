@@ -1,5 +1,10 @@
+html,
 body {
-  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
 }
@@ -28,12 +33,14 @@ textarea {
 .time-block {
   text-align: center;
   border-radius: 15px;
+  padding: 10px;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+  margin-bottom: 25px;
 }
 
 .hour {
@@ -63,6 +70,8 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  font-size: 25px;
+  text-align: center;
 }
 
 .saveBtn i:hover {
