@@ -19,11 +19,11 @@ ColorChange();
 
 function ColorChange() {
   for (var i = 0; i < hourIndex.length; i++)
-    if (rowEl.children("div").eq(i).text < currentTime) {
+    if (rowEl.children("div").eq(i).text() < currentTime) {
       $(rowEl.children("textarea").eq(i)).addClass("past");
-    } else if (rowEl.children("div").eq(i).text > currentTime) {
+    } else if (rowEl.children("div").eq(i).text() > currentTime) {
       $(rowEl.children("textarea").eq(i)).addClass("future");
-    } else if (rowEl.children("div").eq(i).text === currentTime) {
+    } else if (rowEl.children("div").eq(i).text() == currentTime) {
       $(rowEl.children("textarea").eq(i)).addClass("present");
-    }else
+    }
 }
